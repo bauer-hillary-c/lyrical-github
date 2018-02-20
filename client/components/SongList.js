@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import gql from 'graphql-tag';
 
 class SongLlist extends Component {
   render() {
@@ -6,8 +7,16 @@ class SongLlist extends Component {
       <div>
         Song List
       </div>
-    )
+    );
   }
 }
 
-export default SongLlist;
+const query = gql`
+  {
+    songs {
+      title
+    }
+  }
+`;
+
+export default SongList;
