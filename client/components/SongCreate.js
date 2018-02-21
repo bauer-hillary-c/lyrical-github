@@ -11,3 +11,5 @@ class SongCreate extends Component {
     );
   }
 }
+
+export default SongCreate;
