@@ -47,7 +47,6 @@ const mutation = gql`
       title
     }
   }
-
 `;
 
 export default graphql(mutation)(SongCreate);
